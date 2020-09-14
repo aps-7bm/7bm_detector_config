@@ -23,7 +23,6 @@
 
     <Attribute name="AcquireTime"                   type="EPICS_PV"     source="$(DET)cam1:AcquireTime_RBV"              dbrtype="DBR_NATIVE"  description="Exposure time"/>
     <Attribute name="AcquirePeriod"                 type="EPICS_PV"     source="$(DET)cam1:AcquirePeriod_RBV"            dbrtype="DBR_NATIVE"  description="Exposure period"/>
-    <Attribute name="ExposurePeriod"                type="EPICS_PV"     source="13BMD:SIS1:Dwell"                        dbrtype="DBR_NATIVE"  description="SIS Dwell=exposure period"/>
     <Attribute name="FrameRate"                     type="EPICS_PV"     source="$(DET)cam1:FrameRate_RBV"                dbrtype="DBR_NATIVE"  description="Frame rate"/>
     <Attribute name="FrameRateEnable"               type="EPICS_PV"     source="$(DET)cam1:FrameRateEnable_RBV"          dbrtype="DBR_STRING"  description="Frame rate enable"/>
     <Attribute name="Gain"                          type="EPICS_PV"     source="$(DET)cam1:Gain_RBV"                     dbrtype="DBR_NATIVE"  description="Gain"/>
