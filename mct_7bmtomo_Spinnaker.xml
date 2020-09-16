@@ -14,7 +14,7 @@
         <attribute name="description" source="constant" value="DarkData" type="string" />
         <attribute name="axes" source="constant" value="theta:y:x" type="string" />
         <attribute name="units" source="constant" value="counts" type="string" />
-      <dataset>
+      </dataset>
       <dataset name="data_white" source="detector">
         <!-- SaveDest = 2 : /exchange/data_white -->
         <attribute name="description" source="constant" value="WhiteData" type="string" />
