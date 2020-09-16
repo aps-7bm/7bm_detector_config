@@ -32,7 +32,6 @@
     <Attribute name="ArrayCounter"                  type="EPICS_PV"     source="$(DET)cam1:ArrayCounter_RBV"             dbrtype="DBR_NATIVE"  description="Frames collected to date"/>
     <Attribute name="DetectorTemperature"           type="EPICS_PV"     source="$(DET)cam1:TemperatureActual"            dbrtype="DBR_NATIVE"  description="Detector temperature"/>
 
-    <Attribute name="FrameType"                     type="EPICS_PV"     source="$(DET)cam1:FrameType"                    dbrtype="DBR_STRING"  description="Frame type"/>
     <Attribute name="FileName"                      type="EPICS_PV"     source="$(DET)HDF1:FileName"                     dbrtype="DBR_STRING"  description="File name "/>
     <Attribute name="FullFileName"                  type="EPICS_PV"     source="$(DET)HDF1:FullFileName_RBV"             dbrtype="DBR_STRING"  description="Full file name"/>
     <Attribute name="FilePath"                      type="EPICS_PV"     source="$(DET)HDF1:FilePath_RBV"                 dbrtype="DBR_STRING"  description="File path"/>
@@ -139,6 +138,7 @@
     <Attribute name="MW100_ADC_08_Desc"               type="EPICS_PV" source="7bm_dau1:dau:008:Label"       dbrtype="DBR_STRING"/>
     <Attribute name="MW100_ADC_09_Desc"               type="EPICS_PV" source="7bm_dau1:dau:009:Label"       dbrtype="DBR_STRING"/> 
     <Attribute name="MW100_ADC_10_Desc"               type="EPICS_PV" source="7bm_dau1:dau:010:Label"       dbrtype="DBR_STRING"/>
+    <Attribute name="HDF5FrameLocation"               type="EPICS_PV" source="$(TC)HDF5Location"            dbrtype="DBR_STRING"  description="where to store frame data"/>
 </Attributes>
     
     

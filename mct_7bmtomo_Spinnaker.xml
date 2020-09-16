@@ -1,8 +1,7 @@
 <?xml version="1.0" standalone="no" ?>
 <hdf5_layout>
-  <global name="detector_data_destination" ndattribute="FrameType" />
+  <global name="detector_data_destination" ndattribute="HDF5FrameLocation" />
     <group name="exchange">
-      <dataset name="frame_type" source="ndattribute" ndattribute="FrameType" when="OnFileClose" />       
       <dataset name="data" source="detector">
         <!-- SaveDest = 0 : /exchange/data -->
         <attribute name="description" source="constant" value="ImageData" type="string" />
