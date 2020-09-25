@@ -163,6 +163,8 @@
           <dataset name="frame_rate" source="ndattribute" ndattribute="FrameRate" when="OnFileClose" /> 
           <dataset name="frame_rate_enable" source="ndattribute" ndattribute="FrameRateEnable" when="OnFileClose" /> 
           <dataset name="exposure_time" source="ndattribute" ndattribute="AcquireTime" when="OnFileClose" />
+          <dataset name="exposure_time_flat" source="ndattribute" ndattribute="FlatExposureTime" when="OnFileClose" />
+          <dataset name="different_flat_exposure" source="ndattribute" ndattribute="DifferentFlatExposure" when="OnFileClose" />
           <dataset name="acquire_period" source="ndattribute" ndattribute="AcquirePeriod" when="OnFileClose" />
           <dataset name="exposure_period" source="ndattribute" ndattribute="ExposurePeriod" when="OnFileClose" />
           <dataset name="pixel_format" source="ndattribute" ndattribute="PixelFormat" when="OnFileClose" />       
