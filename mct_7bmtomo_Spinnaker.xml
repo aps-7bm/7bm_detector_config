@@ -173,7 +173,10 @@
           <dataset name="temperature" source="ndattribute" ndattribute="DetectorTemperature" when="OnFileClose">
             <attribute name="units" source="constant" value="Celsius" type="string"></attribute>
           </dataset>
-          <dataset name="pixel_size" source="ndattribute" ndattribute="DetectorPixelSize" when="OnFileClose">
+          <dataset name="pixel_size_x" source="ndattribute" ndattribute="DetectorPixelSize" when="OnFileClose">
+            <attribute name="units" source="constant" value="microns" type="string"></attribute>
+          </dataset>
+          <dataset name="actual_pixel_size_x" source="ndattribute" ndattribute="ImagePixelSize" when="OnFileClose">
             <attribute name="units" source="constant" value="microns" type="string"></attribute>
           </dataset>
           <group name="roi">
@@ -190,12 +193,9 @@
             <dataset name="camera_tube_length" source="ndattribute" ndattribute="CameraTubeLength" when="OnFileClose">
               <attribute name="units" source="constant" value="mm" type="string"></attribute>
             </dataset>
-            <dataset name="resolution" source="ndattribute" ndattribute="ImagePixelSize" when="OnFileClose">
-              <attribute name="units" source="constant" value="microns" type="string"></attribute>
-            </dataset>
           </group><!-- /objective -->
           <group name="scintillator">
-            <dataset name="name" source="ndattribute" ndattribute="ScintillatorType" when="OnFileClose" />
+            <dataset name="description" source="ndattribute" ndattribute="ScintillatorType" when="OnFileClose" />
             <dataset name="scintillating_thickness" source="ndattribute" ndattribute="ScintillatorThickness" when="OnFileClose" >
               <attribute name="units" source="constant" value="microns" type="string" />            
             </dataset>
